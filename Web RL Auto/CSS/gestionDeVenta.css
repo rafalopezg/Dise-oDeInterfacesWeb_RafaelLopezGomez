@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Jersey 10';
+    margin: auto;
+    color: rgba(201, 88, 54, 1) ;
+  }
+  
+
+/*-------------------------------------------------------HEADER---------------------------------------------------------------*/
+header {
+  padding: 5%;
+  text-align: center;
+  background-image: url(../Imagenes/fondoheader3.jpg);
+  background-size: cover;
+}
+
+/*-------------------------------------------------------NAV---------------------------------------------------------------*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(217, 217, 217, 1);
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav .nav-left a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav .nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-right a {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-right img {
+  width: 35px;
+  height: 35px;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: rgba(201, 88, 54, 1);
+}
+
+.barra {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(201, 88, 54, 1);
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+
+/*-------------------------------------------------------MAIN---------------------------------------------------------------*/
+main {
+  -ms-flex: 70%;
+  flex: 70%;
+  padding: 20px;
+  background-color: rgba(217, 217, 217, 1);
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.5em;
+  color: rgba(201, 88, 54, 1);
+  margin-bottom: 20px;
+}
+
+
+.gestion-venta {
+  text-align: center;
+  padding: 20px;
+}
+
+.gestion-venta h2 {
+  color: rgba(201, 88, 54, 1); 
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.gestion-venta h3 {
+  color: rgba(201, 88, 54, 1);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.ventajas-venta {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+  width: 40%; 
+  vertical-align: top;
+}
+
+.ventajas-venta:first-child {
+  margin-right: 5%; 
+}
+
+.ventajas-venta li {
+  margin-bottom: 10px;
+  font-size: 1.5em; 
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+/*-------------------------------------------------------FOOTER---------------------------------------------------------------*/
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(166, 180, 198, 1);
+}
+
+table {
+  text-align: center;
+  margin: auto;
+}
+  
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  
+  }
