@@ -1,13 +1,14 @@
-@charset "UTF-8";
 * {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Jersey 10";
-  margin: auto;
-  color: rgb(201, 88, 54);
-}
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Jersey 10';
+    margin: auto;
+    color: rgba(201, 88, 54, 1) ;
+  }
+  
 
 /*-------------------------------------------------------HEADER---------------------------------------------------------------*/
 header {
@@ -18,12 +19,16 @@ header {
 }
 
 /*-------------------------------------------------------NAV---------------------------------------------------------------*/
+
+
+
+
 /*-------------------------------------------------------MAIN---------------------------------------------------------------*/
 main {
   -ms-flex: 70%;
   flex: 70%;
   padding: 20px;
-  background-color: rgb(217, 217, 217);
+  background-color: rgba(217, 217, 217, 1);
   text-align: center;
 }
 
@@ -31,7 +36,8 @@ main {
 .tienda {
   text-align: center;
   padding: 20px;
-  background-color: rgb(217, 217, 217);
+  background-color: rgba(217, 217, 217, 1);
+
 }
 
 .coche-grid {
@@ -61,8 +67,9 @@ main {
   text-align: center;
   padding: 20px;
   margin-top: 30px;
-  background-color: rgb(217, 217, 217);
-  margin-top: 0;
+  background-color: rgba(217, 217, 217, 1);
+  margin-top: 0; 
+
 }
 
 .logo-grid {
@@ -78,17 +85,30 @@ main {
   margin: auto;
 }
 
-/*-------------------------------------------------------FOOTER---------------------------------------------------------------*/
-@media screen and (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
 
-/*# sourceMappingURL=tienda.css.map */
+
+
+/*-------------------------------------------------------FOOTER---------------------------------------------------------------*/
+
+
+
+  
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  
+  }
+
+
+
+
+
+

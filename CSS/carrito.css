@@ -1,69 +1,69 @@
-main{
-    margin-top: 100px; /* Espacio entre el header y el main */
-    padding-bottom: 30px; 
+main {
+  margin-top: 100px; /* Espacio entre el header y el main */
+  padding-bottom: 30px;
 }
 
-
 .carrito {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-    
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
 }
 
 .carrito h1 {
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .carrito-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .carrito-item .producto {
-    font-size: 1.2rem;
-    color: #555;
+  font-size: 1.2rem;
+  color: #555;
 }
 
 .carrito-item .precio {
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
 }
 
 .carrito-total {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #222;
-    font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: bold;
 }
 
 .btn-comprar {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-    padding: 15px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn-comprar:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
+
+/*# sourceMappingURL=carrito.css.map */

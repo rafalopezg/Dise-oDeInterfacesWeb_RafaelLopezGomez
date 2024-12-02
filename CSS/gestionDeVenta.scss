@@ -1,12 +1,14 @@
 * {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Jersey 10";
-  margin: auto;
-  color: rgb(201, 88, 54);
-}
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Jersey 10';
+    margin: auto;
+    color: rgba(201, 88, 54, 1) ;
+  }
+  
 
 /*-------------------------------------------------------HEADER---------------------------------------------------------------*/
 header {
@@ -17,20 +19,23 @@ header {
 }
 
 /*-------------------------------------------------------NAV---------------------------------------------------------------*/
+
+
 /*-------------------------------------------------------MAIN---------------------------------------------------------------*/
 main {
   -ms-flex: 70%;
   flex: 70%;
   padding: 20px;
-  background-color: rgb(217, 217, 217);
+  background-color: rgba(217, 217, 217, 1);
   text-align: center;
 }
 
 main h1 {
   font-size: 2.5em;
-  color: rgb(201, 88, 54);
+  color: rgba(201, 88, 54, 1);
   margin-bottom: 20px;
 }
+
 
 .gestion-venta {
   text-align: center;
@@ -38,13 +43,13 @@ main h1 {
 }
 
 .gestion-venta h2 {
-  color: rgb(201, 88, 54);
+  color: rgba(201, 88, 54, 1); 
   font-size: 3em;
   margin-bottom: 20px;
 }
 
 .gestion-venta h3 {
-  color: rgb(201, 88, 54);
+  color: rgba(201, 88, 54, 1);
   font-size: 2em;
   margin-bottom: 20px;
 }
@@ -55,31 +60,35 @@ main h1 {
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
-  width: 40%;
+  width: 40%; 
   vertical-align: top;
 }
 
 .ventajas-venta:first-child {
-  margin-right: 5%;
+  margin-right: 5%; 
 }
 
 .ventajas-venta li {
   margin-bottom: 10px;
-  font-size: 1.5em;
+  font-size: 1.5em; 
   color: rgb(0, 0, 0);
 }
 
-/*-------------------------------------------------------FOOTER---------------------------------------------------------------*/
-@media screen and (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
 
-/*# sourceMappingURL=gestionDeVenta.css.map */
+
+
+/*-------------------------------------------------------FOOTER---------------------------------------------------------------*/
+
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  
+  }

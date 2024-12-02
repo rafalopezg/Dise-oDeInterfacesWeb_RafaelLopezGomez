@@ -1,14 +1,12 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: 'Jersey 10';
-    margin: auto;
-    color: rgba(201, 88, 54, 1) ;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jersey 10";
+  margin: auto;
+  color: rgb(201, 88, 54);
+}
 
 /*-------------------------------------------------------HEADER---------------------------------------------------------------*/
 header {
@@ -19,96 +17,89 @@ header {
 }
 
 /*-------------------------------------------------------NAV---------------------------------------------------------------*/
-
-
-
 /*-------------------------------------------------------MAIN---------------------------------------------------------------*/
 main {
   -ms-flex: 70%;
   padding: 20px;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: rgb(217, 217, 217);
   text-align: center;
 }
 
 main h1 {
   font-size: 2.5em;
-  color: rgba(201, 88, 54, 1);
+  color: rgb(201, 88, 54);
   margin-bottom: 20px;
 }
-    
 
-  .producto-detalle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+.producto-detalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .producto-imagen {
-    position: relative;
-    margin-right: 20px;
+  position: relative;
+  margin-right: 20px;
 }
 
 .producto-imagen img {
-    width: 300px;
-    border-radius: 10px;
+  width: 300px;
+  border-radius: 10px;
 }
 
 .favorito {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-
 .producto-info {
-    text-align: left;
+  text-align: left;
 }
 
 .producto-info h1 {
-    font-size: 2em;
-    color: rgba(201, 88, 54, 1);
+  font-size: 2em;
+  color: rgb(201, 88, 54);
 }
 
 .precio {
-    font-size: 2.5em;
-    color: green;
-    margin: 10px 0;
+  font-size: 2.5em;
+  color: green;
+  margin: 10px 0;
 }
 
 .descripcion {
-    font-size: 1em;
-    margin-bottom: 20px;
+  font-size: 1em;
+  margin-bottom: 20px;
 }
 
 .boton-carrito {
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .boton-carrito:hover {
-    background-color: rgba(201, 88, 54, 1);
+  background-color: rgb(201, 88, 54);
 }
 
-
-
-  @media screen and (max-width: 700px) {
-    .row {   
-      flex-direction: column;
-    }
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
   }
-  
-  @media screen and (max-width: 400px) {
-    .navbar a {
-      float: none;
-      width: 100%;
-    }
-  
+}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
   }
+}
+
+/*# sourceMappingURL=seatIbiza.css.map */
