@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumanBenchmark</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="JQuery.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion de Elementos con jQuery</h1>
+
+        <div class="form-section">
+            <label for="color-picker">Elige un color:</label>
+            <input type="color" id="color-picker" value="#ff0000">
+            <button id="change-color">Cambiar Fondo</button>
+            <button id="add-element">Añadir Elemento</button>
+            <button id="reset">Resetear</button>
+        </div>
+
+        <div id="elements-container">
+        </div>
+
+        <div class="form-section">
+            <h2>Contador de elementos</h2>
+            <button id="count-elements">Contar Elementos</button>
+            <p id="element-count">Cantidad de elementos: 0</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            const imageList = [
+                '/perro.jpeg',
+                '/gato.jpg'
+            ];
+
+            function getRandomImage() {
+                return imageList[Math.floor(Math.random() * imageList.length)];
+            }
+
+            $('#change-color').click(function() {
+                const color = $('#color-picker').val();
+                $('.element').css('background-color', color);
+            });
+
+            $('#add-element').click(function() {
+                const color = $('#color-picker').val();
+                const newElement = $(
+                    `<div class="element" style="background-color: ${color};">
+                        <img src="${getRandomImage()}" alt="Imagen">
+                        <div class="controls">
+                            <button class="change-image">Cambiar</button>
+                            <button class="delete-element">Borrar</button>
+                        </div>
+                    </div>`
+                );
+
+                //añadir eventos a los botones del nuevo elemento
+                newElement.find('.change-image').click(function() {
+                    $(this).closest('.element').find('img').attr('src', getRandomImage());
+                });
+
+                newElement.find('.delete-element').click(function() {
+                    $(this).closest('.element').remove();
+                });
+
+                $('#elements-container').append(newElement);
+            });
+
+            $('#reset').click(function() {
+                $('#elements-container').empty();
+                updateElementCount();
+            });
+
+            $('#count-elements').click(function() {
+                updateElementCount();
+            });
+
+            function updateElementCount() {
+                const count = $('.element').length;
+                $('#element-count').text(`Cantidad de elementos: ${count}`);
+            }
+        });
+    </script>
+</body>
+</html>
